@@ -9,16 +9,20 @@ This project presents an end-to-end Enterprise Data Analysis of a retail company
 Despite generating significant revenue, the company was suffering from a negative profit margin. By combining SQL for robust data processing and Power BI for strategic KPI tracking, this project transitions the narrative from "How much did we sell?" to "Why are we losing money?".
 
 ## 🛠️ Technical Skills & Tools Demonstrated
-* **SQL:** Data Quality Checks (Null value handling), Data Cleaning, and creating optimized Views (`VW_Cleaned_Sales`) to calculate Gross Sales, Net Sales, Total Cost, and Total Profit.
-* **Power BI:** Advanced UI/UX design, Sync Slicers, interactive visuals (Treemap, Donut, Clustered Columns).
-* **DAX (Data Analysis Expressions):** Custom measure creation including `SUMX` for accurate discount distributions (`Net_Sales * Discount`) and Profit Margin %.
-* **Business Acumen:** Translating raw data into an Executive Action Plan.
+- **SQL:** Data Quality Checks (Null value handling), Data Cleaning, and creating optimized Views (`VW_Cleaned_Sales`) to calculate Gross Sales, Net Sales, Total Cost, and Total Profit.
+- **Power BI:** Advanced UI/UX design, Sync Slicers, interactive visuals (Treemap, Donut, Clustered Columns).
+- **DAX (Data Analysis Expressions):** Engineered over 15 dynamic measures to track core business KPIs.
+  - **Financial Metrics:** `Total Revenue`, `Total Cost`, `Total Profit`, `Total Discount`, `Profit Margin %`.
+  - **Time Intelligence:** Implemented complex context filtering for `Current Month Sales`, `Previous Month Sales`, `Current/Previous Quarter Sales`, and `Growth Month/Quarter Sales %`.
+  - **Operational Metrics:** `AOV (Average Order Value)`, `Total Orders`, `Loss Transactions`, and `Total Loss`.
+  - **Context Functions:** Applied `SUMX` for accurate row-by-row discount distributions (`Net_Sales * Discount`) across different filter contexts.
+- **Business Acumen:** Translating raw data into an Executive Action Plan.
 
 ## 📂 Repository Contents
-* `Sales_Data.sql`: Contains all SQL queries used for data extraction, cleaning, and exploratory data analysis (EDA).
-* `sales_data.csv`: The raw dataset used for this analysis.
-* `Profitability-and-Sales-Analysis.pbix`: The complete Power BI project file.
-* `README.md`: Project documentation and executive summary.
+- `Sales_Data.sql`: Contains all SQL queries used for data extraction, cleaning, and exploratory data analysis (EDA).
+- `sales_data.csv`: The raw dataset used for this analysis.
+- `Profitability-and-Sales-Analysis.pbix`: The complete Power BI project file.
+- `README.md`: Project documentation and executive summary.
 
 ## 💡 Key Executive Insights
 1. The company generated **$59.69M** in Revenue but suffered a net loss of **-$4.16M**.
